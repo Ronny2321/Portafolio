@@ -1,0 +1,233 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A;
+    color: #E2E8F0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1E293B;
+    color: #E2E8F0;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-content.udla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.institucion-image {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: fill;
+    border: 3px solid #fff;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    background-color: #29374e;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38BDF8;
+}
+
+.Redes_Sociales {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Redes_Sociales a {
+    margin: 0 10px;
+}
+
+.Redes_Sociales a i {
+    color: #38BDF8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.Redes_Sociales a i:hover {
+    color: #38BDF8;
+    transform: scale(2.1);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #1E293B;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    color: #38BDF8;
+    border-bottom: 2px solid #38BDF8;
+    padding-bottom: 10px;
+}
+
+.interests ul,
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.interests li,
+.habilidades li {
+    background-color: #334155;
+    margin: 2px 0;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(22% - 10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #E2E8F0;
+}
+
+.interests li:hover,
+.habilidades li:hover {
+    transform: translateY(-5px);
+    background-color: #38BDF8;
+    color: #0F172A;
+}
+
+footer {
+    background-color: #1E293B;
+    color: #38BDF8;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 40px;
+}
+
+.boton {
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 50%;
+    border: none;         
+    outline: none;    
+}
+
+.boton a {
+    color: white;  
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #25D366; 
+    transform: scale(1.1);   
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin: 0 0 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .interests li {
+        width: 100%;
+    }
+}
