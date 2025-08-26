@@ -183,19 +183,29 @@ footer {
     align-items: center;
     position: fixed;
     border-radius: 50%;
-    border: none;         
-    outline: none;    
+    border: none;
+    outline: none;
 }
 
 .boton a {
-    color: white;  
+    color: white;
     font-size: 28px;
     text-decoration: none;
 }
 
 .boton:hover {
-    background-color: #25D366; 
-    transform: scale(1.1);   
+    background-color: #25D366;
+    transform: scale(1.1);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #E2E8F0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -205,8 +215,23 @@ footer {
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        background-color: #1E293B;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 }
 
