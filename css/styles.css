@@ -209,7 +209,7 @@ footer {
     margin-left: 20px;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 769px) {
     main {
         margin-right: 0;
         margin-bottom: 20px;
@@ -241,12 +241,11 @@ footer {
         display: none;
         flex-direction: column;
         background-color: #1E293B;
-        padding: 10px;
+        padding: 10px 0;
         width: 100%;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     nav ul.show {
