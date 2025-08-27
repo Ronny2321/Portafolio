@@ -142,8 +142,8 @@ main {
     list-style-type: none;
     padding: 0;
     display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .interests li,
@@ -153,10 +153,10 @@ main {
     padding: 10px;
     border-radius: 4px;
     width: calc(22% - 10px);
-        min-width: 120px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-        color: #E2E8F0;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #E2E8F0;
 }
 
 .interests li:hover,
@@ -237,26 +237,37 @@ footer {
 }
 
 @media (max-width: 769px) {
-    .header-content {
+    nav ul {
+        display: none;
         flex-direction: column;
+        background-color: #1E293B;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .profile-image {
-        margin: 0 0 20px 0;
+    nav ul.show {
+        display: flex;
     }
 
-    header h1 {
-        font-size: 2em;
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 1100;
+        background: none;
+        border: none;
+        color: #E2E8F0;
+        font-size: 28px;
+        cursor: pointer;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 10px 0;
+        text-align: center;
     }
-
-        .interests li,
-        .habilidades li {
-            width: 100%;
-            min-width: unset;
-            margin-bottom: 10px;
-        }
 }
