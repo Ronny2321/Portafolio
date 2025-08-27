@@ -208,7 +208,7 @@ footer {
     margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     main {
         margin-right: 0;
         margin-bottom: 20px;
@@ -235,7 +235,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
     .header-content {
         flex-direction: column;
     }
